@@ -7,7 +7,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 
 import Ably from 'ably';
 import crypto from 'crypto';
-import { sql } from '@vercel/postgres';
+import { sql } from '@/lib/db';
 
 import { getAckBotStatus, getAckBotMessage, send } from '@/app/api/beUtils';
 import privateConfig from '@/app/privateConfig';

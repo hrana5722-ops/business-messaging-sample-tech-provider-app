@@ -28,9 +28,9 @@ export const ENV_VAR_DESCRIPTIONS: { [key: string]: string } = {
   AUTH0_CLIENT_ID: 'Auth0 client ID',
   AUTH0_CLIENT_SECRET: 'Auth0 client secret',
 
-  // Database Configuration
-  // Auto configured if you use Vercel to connect your DB
-  POSTGRES_URL: 'PostgreSQL connection URL',
+    // Database Configuration
+  // No entry needed here: Netlify DB auto-provisions the database and its
+  // connection string, so there's nothing for the user to set manually.
 
   // Ably Configuration
   ABLY_KEY: 'Ably API key for real-time messaging',
